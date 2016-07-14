@@ -1,0 +1,490 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -180px;
+    visibility: hidden;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus,
+.btn-qs,
+.btn-qs:hover,
+.btn-qs:focus {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: none;
+  background: url("../images/ms-facebook.png") no-repeat 25px 25px;
+  background-size: 9px 19px;
+  background-color: #213644;
+  padding-left: 50px;
+  white-space: nowrap;
+}
+
+.btn-qs:hover {
+  color:#fff;
+  background-color:#354a59;
+  text-decoration: none;
+}
+
+.btn-newsletter, 
+.btn-newsletter.focus, 
+.btn-newsletter:focus, 
+.btn-newsletter:hover{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.form-input, .form-submit{
+  display: block;
+}
+
+.form-input{
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+input{
+  color: #000;
+  border: none;
+  line-height: 14px;
+  padding: 18px;
+  height: 50px;
+  font-size: 14px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-input, .form-submit{
+    display: inline-block;
+  }
+  .form-input{
+    margin-bottom: 0;
+    margin-left: 1px;
+  }
+  input{
+    width: auto;
+  }
+  .btn-newsletter, 
+  .btn-newsletter.focus, 
+  .btn-newsletter:focus, 
+  .btn-newsletter:hover{
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topleft: 0;
+    border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-bottom-radius: 0;
+  }
+}
+
+/* Titles */
+h4{
+  font-family: 'Dosis', sans-serif;
+  background-color: #213644;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: auto;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 8px;
+  display: inline-block;
+}
+h3{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 15px 0 25px 0
+}
+h2{
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: auto;
+  text-transform: uppercase;
+  margin: 0 0 60px
+}
+.programme h2{
+  margin-bottom:140px
+}
+h1{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 40px;
+  margin: 0
+}
+p{
+  margin: 0 0 60px 0;
+}
+
+.personne{
+  font-family: 'Dosis', sans-serif;
+  background-color: #213644;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: auto;
+  margin: 2px;
+  padding: 8px;
+  display: inline-block;
+}
+
+.titre{
+  font-size: 12px;
+  font-weight: 400 !important;
+}
+
+.note{
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+  font-weight: 400 !important;
+  margin-top: 25px;
+}
+
+.programme, .invite, .evenement, .footerline{
+    text-align: left;
+    padding-top: 75px;
+    border-bottom: dotted 1px #fff;
+ }
+
+ .footerline img{
+  display: inline-block;
+  margin: 0 25px 50px;
+ }
+
+ .invite, .evenement{
+  text-align: center;
+  padding-bottom: 75px
+ }
+
+.footerline{
+  text-align: center;
+  padding-bottom: 25px
+ }
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #00bedc;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  border-bottom: 1px dotted #fff;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  /*vertical-align: top;*/
+  padding-top: 130px;
+  vertical-align: middle;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/*
+ * Body
+ */
+
+.headline{
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: dotted 1px #fff;
+ }
+
+.footerline{
+  margin-bottom: 0px;
+  border-bottom: none
+}
+
+.footer{
+  padding: 20px;
+  text-align: center;
+  font-size: 10px
+}
+
+
+.ville{
+    margin-top: -80px;
+    margin-bottom: 80px;
+ }
+
+.last-ville{
+  margin-bottom: 0;
+}
+
+.bus-line{
+    background: url("../images/bus-line.jpg") repeat-y 10px 0;
+    background-size: 15px 1px;
+ }
+
+.bus-stop{
+    height: 15px;
+    background: url("../images/bus-stop.png") no-repeat 10px 0;
+    background-size: 15px 15px;
+    margin-top: -7px;
+ }
+
+@media (min-width: 992px) {
+  .bus-line, .bus-stop{
+      background-position: 100px 0;
+  }
+}
+
+.lead{
+  margin-top: 0;
+}
+
+.response{
+  margin-top: 40px;
+}
+
+.mce_inline_error{
+  position: absolute;
+  font-size: 11px
+}
+
+/*
+ * Header
+ */
+/*.social {
+  display: inline-block !important;
+}*/
+
+
+
+/*
+ * Header
+ */
+.rrssb-buttons{
+  font-family: "Dosis", sans-serif !important; 
+  font-size: 13px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+}
+.rrssb-text{
+  padding-left: 5px;
+}
+
+.label{
+  font-size: 12px !important; 
+  line-height: 37px !important;
+  padding-right: 10px !important;
+  text-align: left;
+}
+
+.rrssb-buttons li{
+  padding-left: 5px !important;
+  float: right;
+}
+
+
+/*
+ * Navigation
+ */
+
+.navbar{
+  min-height: auto !important;
+  padding: 10px 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  top: 75px;
+  margin: 0;
+}
+
+
+.navbar-lang{
+  float: left !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 37px;
+  font-weight: 400
+}
+
+.navbar-lang li{
+  display: inline-block;
+}
+
+.navbar-lang li.selected{
+  font-weight: 600
+}
+
+.stab{
+  padding: 0px 4px 3px;
+  background-color: #213644;
+}
+
+.navbar-lang ul{
+  margin: 0;
+  padding: 0
+}
+
+.navbar-lang a{
+  text-decoration: none;
+}
+
+.navbar-lang a:hover{
+  text-decoration: underline;
+}
+
+.navbar-header{
+  float: right !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-inverse{
+  background-color: #303030;
+  border: none;
+}
+
+.navbar-nav, 
+.navbar-nav > li > a,
+.navbar-header > a{
+  line-height: 20px;
+}
+
+.navbar-nav{
+  float: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav, 
+  .navbar-nav > li > a,
+  .navbar-header > a{
+    line-height: 45px;
+  }
+  .navbar-nav{
+    float: right;
+  }
+}
+
+.navbar-inverse .navbar-nav>li>a.lower-text{
+  color: #917199;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+  clear: both;
+  padding: 50px 0 75px;
+  text-align: left;
+}
+
+.cover a{
+  border-bottom: 2px dotted #fff;
+  text-decoration: none;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  .navbar-header{
+    width: 500px;
+  }
+  h4{
+    font-size: 20px
+  }
+  h3{
+    font-size: 45px;
+    line-height: 50px;
+  }
+  h2{
+    font-size: 25px
+  }
+  h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .stab{
+    padding: 0px 8px 6px;
+  }
+
+  .label{
+    text-align: right;
+  }
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    /*vertical-align: middle;*/
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
