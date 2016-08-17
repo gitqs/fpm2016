@@ -30,6 +30,7 @@ a.anchor {
   font-size: 25px;
   line-height: 30px;
   text-transform: none;
+  text-decoration: none;
   /*background: url("../images/ms-facebook.png") no-repeat 25px 25px;
   padding-left: 50px;*/
   background-size: 9px 19px;
@@ -40,7 +41,6 @@ a.anchor {
 .btn-qs:hover {
   color:#fff;
   background-color:#354a59;
-  text-decoration: none;
 }
 
 .btn-newsletter, 
