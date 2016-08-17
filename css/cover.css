@@ -22,7 +22,9 @@ a.anchor {
 .btn-default:focus,
 .btn-qs, 
 .btn-qs:hover,
-.btn-qs:focus {
+.btn-qs:focus,
+.btn-qs:visited,
+.btn-qs:active {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
   font-size: 25px;
