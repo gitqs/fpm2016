@@ -28,10 +28,10 @@ a.anchor {
   font-size: 25px;
   line-height: 30px;
   text-transform: none;
-  background: url("../images/ms-facebook.png") no-repeat 25px 25px;
+  /*background: url("../images/ms-facebook.png") no-repeat 25px 25px;
+  padding-left: 50px;*/
   background-size: 9px 19px;
   background-color: #213644;
-  padding-left: 50px;
   white-space: nowrap;
 }
 
